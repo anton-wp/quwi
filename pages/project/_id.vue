@@ -37,6 +37,8 @@ export default {
   },
   methods: {
     save() {
+      this.error = ''
+      this.success = ''
       let formData = new FormData()
       formData.append('name', this.project.name)
       this.$axios
